@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\MarketController;
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +18,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
+
+Route::get('market',[MarketController::class,'index']);
+
+Route::get('profile', [ProfileController::class, 'index']);
+Route::get('wallet', [ProfileController::class, 'index']);
