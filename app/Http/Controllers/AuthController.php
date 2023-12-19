@@ -20,7 +20,7 @@ class AuthController extends Controller
             if (Auth::attempt($credential)) {
                 $user = Auth::user();
                 sweetalert()->addSuccess('Welcome ' . $user->name);
-                return back();
+                return redirect('/');
             } else {
                 sweetalert()->addWarning('Invalid email or password. Please ensure 
                 that you have entered the correct credentials.');
