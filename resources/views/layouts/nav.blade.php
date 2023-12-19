@@ -49,7 +49,7 @@
                               aria-haspopup="true" aria-expanded="false">
                               <img src="assets/img/avatar.svg" alt="avatar"> </a>
                       @else
-                          <a href="{{ url('login') }}" role="button" class="nav-link mt-2 bg-danger text-light">Login </a>
+                          <a href="{{ url('login') }}" role="button" class="nav-link mt-2 bg-danger text-light" wire:navigate>Login </a>
                       @endif
 
 

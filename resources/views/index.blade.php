@@ -5,11 +5,16 @@
 
     <title>Coin Me</title>
     @include('layouts.header')
+    @livewireStyles()
 
 </head>
 
 <body id="dark">
     @include('layouts.nav')
+
+    <p class="alert alert-warning" wire:offline>
+    Whoops, your device has lost connection. The web page you are viewing is offline.
+</p>
 
 
     <div class="container-fluid mtb15 no-fluid">
@@ -1467,6 +1472,7 @@
     </div>
 
     @include('layouts.footer')
+    @livewireScripts()
     <script>
         $('tbody, .market-news ul').mCustomScrollbar({
             theme: 'minimal',

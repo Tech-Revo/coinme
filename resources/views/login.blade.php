@@ -5,6 +5,7 @@
 
     <title>Coin Me</title>
     @include('layouts.header')
+    @livewireStyles()
 
 </head>
 
@@ -38,7 +39,7 @@
                 </div>
                 <button type="submit" class="btn btn-primary">Sign In</button>
             </form>
-            <h2>Don't have an account? <a href="/signup">Sign up here</a></h2>
+            <h2>Don't have an account? <a href="{{url('register')}}" wire:navigate>Sign up here</a></h2>
         </div>
     </div>
 
@@ -47,11 +48,8 @@
 
 
     @include('layouts.footer')
-    <script>
-        $('tbody, .market-news ul').mCustomScrollbar({
-            theme: 'minimal',
-        });
-    </script>
+    @livewireScripts()
+   
 </body>
 
 </html>
