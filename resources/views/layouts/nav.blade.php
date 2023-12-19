@@ -85,6 +85,13 @@
                                           </a>
                                       </li>
 
+                                       <li class="nav-item">
+                                          <a href="{{ url('settings') }}" class="nav-link">
+                                              <i class="icon ion-md-settings"></i>
+                                              <span>Settings</span>
+                                          </a>
+                                      </li>
+
 
                                       <li class="nav-item">
                                           <a href="{{ url('logout') }}" class="nav-link red">

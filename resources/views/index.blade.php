@@ -12,9 +12,9 @@
 <body id="dark">
     @include('layouts.nav')
 
-    <p class="alert alert-warning" wire:offline>
-    Whoops, your device has lost connection. The web page you are viewing is offline.
-</p>
+   <div wire:offline>
+    This device is currently offline.
+</div>
 
 
     <div class="container-fluid mtb15 no-fluid">
