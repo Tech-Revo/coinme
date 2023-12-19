@@ -31,11 +31,11 @@
                   </li>
               </ul>
               <ul class="navbar-nav ml-auto">
-                  <li class="nav-item header-custom-icon">
+                  {{-- <li class="nav-item header-custom-icon">
                       <a class="nav-link" href="#" id="changeThemeLight">
                           <i class="icon ion-md-sunny"></i>
                       </a>
-                  </li>
+                  </li> --}}
                   <li class="nav-item header-custom-icon">
                       <a class="nav-link" href="#" id="clickFullscreen">
                           <i class="icon ion-md-expand"></i>
@@ -49,7 +49,7 @@
                               aria-haspopup="true" aria-expanded="false">
                               <img src="assets/img/avatar.svg" alt="avatar"> </a>
                       @else
-                          <a href="{{ url('login') }}" role="button" class="btn btn-danger">Login </a>
+                          <a href="{{ url('login') }}" role="button" class="nav-link mt-2 bg-danger text-light">Login </a>
                       @endif
 
 
